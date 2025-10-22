@@ -1,0 +1,25 @@
+
+<header> <h2>Employee List</h2></header>
+<body>
+    <table class="table_">
+        <thead><tr>
+         <th>   Id </th>
+        <th> FirstName </th>
+        <th> LastName </th>
+        <th> Email </th>
+        <th> Update </th>
+        </tr></thead>
+        <tbody>
+            <tr *ngFor="let emp of employee">
+                <td>{{emp.id}}</td>
+                <td>{{emp.firstname}}</td>
+                <td>{{emp.lastname}}</td>
+                <td>{{emp.email}}</td>
+                <td>
+                    <button (click)="getEmpById(emp.id)">Edit</button>
+                    <button (click)="deleteEmployee(emp.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>

@@ -1,0 +1,33 @@
+
+<header>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</header>
+
+<body>
+     <a routerLink="app-employee-list" routerLinkActive="active">Employee List</a>
+    <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"> 
+   
+        <!-- <div><label> First Name : </label>
+        <input id="f_id" class="inputs"></div>
+        <div><label> Last Name : </label>
+        <input id="l_id" class="inputs"></div>
+        <div><label> Email Id  : </label>
+        <input id="email_id" class="inputs"></div>
+        <button> Save </button>
+    </div>  -->
+    <form  #empForm="ngForm" autocomplete="off" (ngSubmit)=onSubmit(empForm)>
+        <label> First Name : </label>
+        <input type="text" name="fname" [(ngModel)]="employee.firstname" placeholder=" first name" required>
+        <label> Last Name : </label>
+        <input type="text" name="lname" [(ngModel)]="employee.lastname" placeholder=" last name" required>
+        <label> Email Id  : </label>
+        <input type="text" name="email" [(ngModel)]="employee.email" placeholder=" email" required>
+        <button type="Submit">Save</button>
+    </form>
+
+  
+        </div>
+    </div>
+</body>
+
