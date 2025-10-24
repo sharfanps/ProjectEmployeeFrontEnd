@@ -1,18 +1,43 @@
 .inputs{
-    background-color: #fff;
-    align-items: center; 
-     border-radius: 5px;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 8px;
 }
-.row{
-     /* text-align: center; */
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;   /* Centers vertically */
-    height: 100vh;
-    border-color: rgb(72, 72, 208);
-    color: rgb(88, 7, 7);
-    font-size: 20px;
+
+.row {
+  display: flex;
+  justify-content: center; 
+  /* centers horizontally */
+  align-items: flex-start; 
+  /* keep form toward top */
+  padding-top: 22px;
+  border-color: rgb(72, 72, 208);
+  color: rgb(88, 7, 7);
+  font-size: 20px;
 }
+
+.form-card input,
+.form-card textarea,
+.form-card select,
+.inputs input,
+.inputs textarea,
+.inputs select {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fafafa;
+}
+.form-card textarea,
+.inputs textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+
 button{
     margin-top: 40px;
     margin-left: 55px;
@@ -27,8 +52,8 @@ button{
 
 }
 .form-card{
-  margin: 24px auto 0;        /* little top position */
-  max-width: 760px;           /* limit width for neat layout */
+  margin: 24px auto 0;        
+  max-width: 760px;           
   background: #ffffff;
   padding: 20px;
   border-radius: 8px;
@@ -52,8 +77,11 @@ button{
  button:hover {
     background-color: #008CBA;color: rgb(5, 60, 188);
 }
-body{
-    background: linear-gradient(rgb(198, 244, 198));
+html, body {
+  height: 100%;
+  margin: 0;
+  min-height: 100vh;
+  background: #c6f4c6; /* page background (solid green) */
 }
 a:link, a:visited {
   color: rgb(61, 29, 179);
