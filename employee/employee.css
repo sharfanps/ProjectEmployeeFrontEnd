@@ -1,42 +1,13 @@
-.inputs{
-      background-color: #fff;
-      border-radius: 5px;
-      padding: 8px;
-}
 
 .row {
   display: flex;
   justify-content: center; 
-  /* centers horizontally */
   align-items: flex-start; 
-  /* keep form toward top */
   padding-top: 22px;
   border-color: rgb(72, 72, 208);
   color: rgb(88, 7, 7);
-  font-size: 20px;
+  font-size: 25px;
 }
-
-.form-card input,
-.form-card textarea,
-.form-card select,
-.inputs input,
-.inputs textarea,
-.inputs select {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 10px 12px;
-  font-size: 1rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  background: #fafafa;
-}
-.form-card textarea,
-.inputs textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
 
 button{
     margin-top: 40px;
@@ -52,8 +23,7 @@ button{
 
 }
 .form-card{
-  margin: 24px auto 0;        
-  max-width: 760px;           
+  margin: 24px auto 0;                 
   background: #ffffff;
   padding: 20px;
   border-radius: 8px;
@@ -61,17 +31,6 @@ button{
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-.form-row {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.form-group {
-  flex: 1 1 220px;
-  display: flex;
-  flex-direction: column;
 }
 
  button:hover {
@@ -81,7 +40,7 @@ html, body {
   height: 100%;
   margin: 0;
   min-height: 100vh;
-  background: #c6f4c6; /* page background (solid green) */
+  background: #c6f4c6;
 }
 a:link, a:visited {
   color: rgb(61, 29, 179);
@@ -94,8 +53,4 @@ a:link, a:visited {
 
 a:hover, a:active {
   color: rgb(67, 152, 244);
-}
-@media (max-width: 600px) {
-  .form-card { margin: 16px; padding: 14px; }
-  .form-row { flex-direction: column; }
 }
